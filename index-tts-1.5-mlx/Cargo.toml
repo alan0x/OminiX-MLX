@@ -18,6 +18,9 @@ serde_json = "1"
 thiserror = "2"
 tracing = "0.1"
 
+# Tokenizer (HuggingFace BPE — IndexTTS ships tokenizer.json)
+tokenizers = { version = "0.21", default-features = false, features = ["onig"] }
+
 # Audio I/O
 hound = "3"
 

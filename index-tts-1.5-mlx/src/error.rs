@@ -13,7 +13,10 @@ pub enum Error {
     Json(#[from] serde_json::Error),
 
     #[error("weight load error: {0}")]
-    WeightLoad(#[from] mlx_rs::error::IoError),
+    MlxIo(mlx_rs::error::IoError),
+
+    #[error("weight load error: {0}")]
+    WeightLoad(String),
 
     #[error("weight not found: {0}")]
     WeightNotFound(String),
