@@ -48,6 +48,8 @@ members = [
     "qwen3.5-35B-mlx",
     "ominix-api",
     "deepseek-ocr2-mlx",
+    # IndexTTS
+    "index-tts-1.5-mlx",
 ]
 
 resolver = "2"
